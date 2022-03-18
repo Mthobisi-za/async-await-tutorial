@@ -1,4 +1,4 @@
-const data = [{
+[{
         "gender": "female",
         "name": {
             "title": "Ms",

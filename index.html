@@ -2,14 +2,51 @@
 <html lang="en">
 
 <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js" integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="./style.css">
     <meta charset="UTF-8">
+    <script id="entry-template" type="text/x-handlebars-template">
+        <div class="user has-background-success">
+            <h2 class="subtitle">{{name}}</h2>
+            <img src="{{image}}" alt="">
+            <p class="text">Age {{age}}</p>
+            <p class="text">Gender {{gender}}</p>
+            <p>City {{city}}</p>
+        </div>
+    </script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 
 <body>
+    <div class="container has-background-info">
+        <br> <br> <br>
+        <div class="box first">
+            <button class="button">Get new user</button>
+        </div>
+        <br> <br>
+        <div class="box second">
+            <h1 class="title">All users</h1>
+            <div class="results">
+                <!---append data--->
+                <!--
+                <div class="user has-background-success">
+                    <h2 class="subtitle name">{{name}}</h2>
+                    <img alt="">
+                    <p class="text age">Age {{age}}</p>
+                    <p class="text gender">Gender {{gender}}</p>
+                    <p class="city">City {{city}}</p>
+                </div>-->
 
+                <!---append data--->
+            </div>
+        </div>
+        <br> <br> <br>
+    </div>
+    <script src="./data.js"></script>
+    <script src="./api.js"></script>
 </body>
 
 </html>
